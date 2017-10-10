@@ -18,7 +18,9 @@ header .subheading {}
 
 nav {}
 nav button {}
-nav ul {}
+nav ul {list-style-type: box;
+    margin: 50;
+    padding: 50;}
 nav ul li {}
 nav ul li a {}
 nav ul li.active a {}
