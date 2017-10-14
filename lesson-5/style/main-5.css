@@ -11,7 +11,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
+header {testing}
 header h1 {}
 header img {}
 header .subheading {}
