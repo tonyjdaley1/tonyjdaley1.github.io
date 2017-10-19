@@ -44,3 +44,6 @@ footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+.forecast {
+     display: none;
+}
