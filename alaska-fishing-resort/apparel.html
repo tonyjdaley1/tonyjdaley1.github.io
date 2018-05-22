@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>Lodge photos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
-body{ background-color:#ffffe6;
-}
-
-div.gallery {
+    body {margin:0;height:2000px;}
+    
+    div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
@@ -26,25 +29,154 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
 </style>
-</head>
 <body>
-<div >
-<div class="gallery">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="resortemplate.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About Merchandice</a>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Merchandise</b></h1>
+  <p><b>Shirts,Hats</b></p>
+  
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+  </div>
+
+  <div class="">
+    <div class="gallery">
   <a target="_blank" href="apparel/IMG_7609.jpg">
     <img src="apparel/IMG_7609.jpg" alt="Trolltunga Norway" width="300" height="200">
   </a>
   <div class="desc">10$ 100% Cotton </div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="">
-    <img src="" alt="Image not working" width="300" height="200">
+    <div class="gallery">
+  <a target="_blank" href="apparel/IMG_7609.jpg">
+    <img src="apparel/IMG_7609.jpg" alt="Trolltunga Norway" width="300" height="200">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">10$ 100% Cotton </div>
+   
+    <img src="" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+  </div>
 </div>
 
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+
+  
+  
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+
+<div class="content">
+ 
+<script>
 
 
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>
