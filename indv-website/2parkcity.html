@@ -5,12 +5,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    @media screen and (max-width: 1200px)
+   {
+       body { background-color: aqua;}
+    }
+    .sundance-map{
+        width: 365px;
+        height: 400px;
+    }
 * {
     box-sizing: border-box;
 }
 
 body {
   margin: 0;
+    background-color: beige;
 }
 
 
@@ -44,16 +53,21 @@ body {
 .column {
     float: left;
     padding: 10px;
+    height:3000px;
 }
 
 /* Left and right column */
 .column.side {
     width: 25%;
+    height:3000px;
+    background-color: azure
 }
 
 /* Middle column */
 .column.middle {
     width: 50%;
+    height:3000px;
+    background-color: aquamarine
 }
 
 /* Clear floats after the columns */
@@ -156,7 +170,7 @@ body {
 </div>
 
 <div class="topnav">
-  <a href="index.html">Home</a>
+  <a href="../index.html">Home</a>
   
 </div>
 
@@ -164,12 +178,17 @@ body {
   <div class="column side">
     <h2>Calender</h2>
     <p>Calender cotent</p>
+    <img class="sundance-map" src="../Cit230/ponder-prove/images-folder/sundance-map.jpg" alt="Sundance Map">
+    <audio controls>
+  <source src="../Cit230/ponder-prove/audio-folder/SNOWSKI.mp3" type="audio/mpeg">
+
+</audio>
   </div>
   <div class="column middle">
     <h2>Resort Information</h2>
-    <p>Note Prices will depend upon the actual day of purchase</p>
+    <p></p>
     <p>Hours:9AM-4PM</p>
-    <p>Prices:120$</p>
+    <p>Prices:60$</p>
   </div>
   <div class="column side">
     <h2>On Site Rentals</h2>
